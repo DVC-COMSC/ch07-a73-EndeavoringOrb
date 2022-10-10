@@ -8,6 +8,8 @@ for i in range(len(numbers)):
     if insval < numbers[i]:
         numbers.insert(i,insval)
         break
+    elif i == len(numbers) - 1:
+        numbers.append(insval)
 # ******************************
 # Make your Code
 # ******************************
