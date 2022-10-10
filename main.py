@@ -5,12 +5,11 @@ numbers = [5, 20, 30, 35, 50]
 insval = int(input('Enter the insertion value: '))
 
 for i in range(len(numbers)):
-    if insval > len(numbers):
-        continue
-    else:
+    if insval < numbers[i]:
         numbers.insert(i,insval)
+        break
 # ******************************
 # Make your Code
 # ******************************
 
-print (numbers)
+print(numbers)
